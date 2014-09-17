@@ -29,3 +29,11 @@ Bei Fragen/Problemen einfach immer her damit :)
 Twitter: @ThatMSG
 
 Github: Webklex
+
+
+Credits:
+===
+
+PHP ActiveRecord - www.phpactiverecord.org
+DomPDF - dompdf.github.io
+Start Bootstrap - startbootstrap.com
