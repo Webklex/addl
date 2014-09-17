@@ -12,7 +12,20 @@ Installation:
 ===
 
 1.) /app/config/app_config.php mit den eigenen Parametern füttern
+
 2.) http://{DOMAIN_GEDÖNS}/install.php ausführen
+
 3.) http://{DOMAIN_GEDÖNS}/index.php
 
 
+
+
+Hilfe:
+===
+
+Bei Fragen/Problemen einfach immer her damit :)
+
+
+Twitter: @ThatMSG
+
+Github: Webklex
