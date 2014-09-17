@@ -35,5 +35,7 @@ Credits:
 ===
 
 PHP ActiveRecord - www.phpactiverecord.org
+
 DomPDF - dompdf.github.io
+
 Start Bootstrap - startbootstrap.com
