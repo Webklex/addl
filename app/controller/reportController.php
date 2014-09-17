@@ -52,7 +52,7 @@ class reportController {
             'START' => AUSB_START,
             'CURRENT_DATE' => date('d.m.Y'),
             'NR' => 1,
-            'COMPANY' => 'H3-Netservice GmbH',
+            'COMPANY' => COMPANY_NAME,
             'ABTEILUNG' => 'IT',
             'WEEK_START' => '01.02.19970',
             'WEEK_ENDE' => '07.02.19970',
