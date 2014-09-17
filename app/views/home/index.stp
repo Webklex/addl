@@ -1,0 +1,41 @@
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <?php
+            if(file_exists(APP_ROOT.'/../public/install.php')){
+                ?>
+                <h2 style="color:#d43f3a">Bitte entferne folgende Datei: install.php</h2>
+                <?php
+            }
+            ?>
+        </div>
+        <div class="col-lg-6">
+            <h2 class="text-center">FAQ</h2>
+            <b>1.) Wie fange ich an?</b>
+            <p style="margin-left: 22px;">
+                Als erstes müssen alle Parameter bestimmt werden. Hierzu solltest du deine Einstellungen (oben rechts beim Profilicon) anpassen.
+                <br />
+                Anschließend müssen zunächst Einträge von <i><a href="http://mite.yo.lk/" target="_blank">Mite</a></i> geholt werden. Hierzu zu "Einträge bearbeiten" wechseln und die Mite-Einträge holen.
+                <br />
+                Nun müssen wir nur noch Bündeln (Einträge bündeln) und können anschließend unter "Berichte einsehen" unsere Berichte generieren.
+            </p>
+            <b>2.) Wo bekomme ich Hilfe?</b>
+            <p style="margin-left: 22px;">
+                Wenn du Probleme beim Installieren, Bearbeiten oder sonsigen hast, sag einfach bescheid.
+                <br />
+                Zu erreichen via:
+                <a class="btn btn-social btn-github" href="https://github.com/Webklex/ausbildungsnachweisgenerator">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+                <a class="btn btn-social btn-twitter" href="https://twitter.com/ThatMSG">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+            </p>
+        </div>
+    </div>

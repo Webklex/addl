@@ -1,0 +1,90 @@
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Zeiteinträge bearbeiten</h1>
+            <button id="user_load_times" class="btn btn-default pull-right" style="margin-top: -70px;">Mite-Einträge holen</button>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Übersicht aller Einträge
+                </div>
+                <div class="panel-body">
+
+                    <?php
+                    $counter = 0;
+                    foreach($data as $month => $days){
+                        ?>
+                        <div class="row text-center">
+                            <h3>Monat <?=explode('-',$month)[1]?> - <?=explode('-',$month)[0]?></h3>
+                        </div>
+                        <div class="row">
+                            <?php
+                            foreach($days as $day => $times){
+                                ?>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <button class="btn btn-success btn-circle btn-xs" style="display: inline-block; margin-top: -5px;" data-function="addTime" data-time="<?=$day?><?=explode('-',$month)[1]?><?=explode('-',$month)[0]?>">+</button>
+                                        <h4 style="display: inline-block"><?=$day?>.<?=explode('-',$month)[1]?>.<?=explode('-',$month)[0]?></h4>
+                                    </div>
+
+                                    <div id="day_box_<?=$day?><?=explode('-',$month)[1]?><?=explode('-',$month)[0]?>">
+                                        <?php
+                                        foreach($times as $time){
+                                            ?>
+                                            <form role="form" method="POST" target="_self" id="timeEntry_<?=$time->id?>">
+                                                <div class="form-group">
+                                                    <b>Angegebene Tätigkeit</b>
+                                                    <div style="display: inline-block; float: right; padding: 5px;">
+                                                        <button class="btn btn-danger btn-circle btn-xs" style="display: inline-block" data-function="deleteTime" data-id="<?=$time->id?>">x</button>
+                                                    </div>
+                                                    <input class="form-control" style="margin-bottom: 10px;" name="project_name" value="<?=$time->project_name?>" placeholder="Projekt"/>
+                                                    <input class="form-control" name="service_name" value="<?=$time->service_name?>" placeholder="Service"/>
+                                                    <input class="form-control" style="width: 100px;margin-top: 10px;display: inline-block" name="minutes" value="<?=$time->minutes?>" placeholder="Minutes"/>
+
+                                                    <input type="hidden" name="id" value="<?=$time->id?>" />
+
+                                                    <button class="btn btn-default" style="display: inline-block" data-function="editTime" data-id="<?=$time->id?>">Speichern</button>
+
+                                                </div>
+                                            </form>
+                                            <?php
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="row"><hr /></div>
+                        <?php
+                    }
+                    ?>
+                    <!-- /.row (nested) -->
+                </div>
+                <div class="row">
+                    <h2 class="text-center">
+                        Anfang der Ausbildung
+                        <br />
+                        .
+                        <br />
+                        .
+                        <br />
+                        .
+                    </h2>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
