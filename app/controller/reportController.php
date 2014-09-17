@@ -206,11 +206,11 @@ class reportController {
         require_once APP_ROOT.'/libs/activeRecord/ActiveRecord.php';
 
         $connections = array(
-            'development' => 'mysql://root@127.0.0.1/addl',
-            'production' => 'mysql://root@127.0.0.1/addl'
+            'development' => 'mysql://'.DATABASE_USER.'@'.DATABASE_HOST.'/'.DATABASE_NAME.'?charset=utf8',
+            'production' => 'mysql://'.DATABASE_USER.'@'.DATABASE_HOST.'/'.DATABASE_NAME.'?charset=utf8'
         );
 
-        // initialize ActiveRecord
+// initialize ActiveRecord
         ActiveRecord\Config::initialize(function($cfg) use ($connections)
         {
             $cfg->set_model_directory(APP_ROOT.'/models');
