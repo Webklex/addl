@@ -1,7 +1,7 @@
 addl - Ausbildungsnachweisgenerator
 ====
 
-Der Ausbildungsnachweisgenerator ist ein auf PHP 5.5x basierendes Online tool zum erstellen von Ausbildungsnachweisen.
+Der Ausbildungsnachweisgenerator ist ein auf PHP 5.4x basierendes Online tool zum erstellen von Ausbildungsnachweisen.
 
 Um echte Daten darstellen zu können wird ein aktiver Mite (http://mite.yo.lk) Account benötigt bzw empfolen.
 
