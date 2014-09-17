@@ -17,6 +17,8 @@ Installation:
 
 3.) http://{DOMAIN_GEDÖNS}/index.php
 
+!WICHTIG! Bitte beachtet, dass das System davon ausgeht, das der Ordner /public als webroot fungiert. DOMAIN_GEDÖNS steht für die verwendete Domain z.B. example.com...
+
 
 
 
